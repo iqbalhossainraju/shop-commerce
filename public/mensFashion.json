@@ -1,8 +1,52 @@
 [
     {
         "_id": 1,
-        "img": "",
-        "title": "",
+        "title": "mensFashion",
+        "price": 420
+    },
+    {
+        "_id": 2,
+        "title": "mensFashion",
+        "price": 420
+    },
+    {
+        "_id": 3,
+        "title": "mensFashion",
+        "price": 420
+    },
+    {
+        "_id": 4,
+        "title": "mensFashion",
+        "price": 420
+    },
+    {
+        "_id": 5,
+        "title": "mensFashion",
+        "price": 420
+    },
+    {
+        "_id": 6,
+        "title": "mensFashion",
+        "price": 420
+    },
+    {
+        "_id": 7,
+        "title": "mensFashion",
+        "price": 420
+    },
+    {
+        "_id": 6,
+        "title": "mensFashion",
+        "price": 420
+    },
+    {
+        "_id": 7,
+        "title": "mensFashion",
+        "price": 420
+    },
+    {
+        "_id": 8,
+        "title": "mensFashion",
         "price": 420
     }
 ]

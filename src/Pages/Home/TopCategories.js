@@ -10,7 +10,6 @@ import topCat6 from '../../assets/Top-Categories/jeans.webp';
 import topCat8 from '../../assets/Top-Categories/jumpsuits-playsuits.webp';
 import topCat9 from '../../assets/Top-Categories/lingeries.webp';
 import topCat7 from '../../assets/Top-Categories/skirts-tops.webp';
-import './TopCategories.css';
 
 const TopCategories = () => {
     return (

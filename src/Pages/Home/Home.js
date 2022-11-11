@@ -1,13 +1,17 @@
 import React from 'react';
 import Carousel from './Carousel';
-import Info from './Info';
+import ExploreBrands from './ExploreBrands';
+import TopCategories from './TopCategories';
 
 const Home = () => {
     return (
-        <div>
+        <>
             <Carousel />
-            <Info />
-        </div>
+            {/* <Info /> */}
+            <TopCategories />
+            <ExploreBrands />
+            {/* <ExploreCategories /> */}
+        </>
     );
 };
 

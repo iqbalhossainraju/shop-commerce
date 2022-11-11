@@ -1,9 +1,13 @@
 import React from 'react';
-
 const Info = () => {
     return (
-        <div>
-            <h2>This is a Info</h2>
+        <div className="grid grid-cols-2 gap-4">
+            {/* <div>
+                <img src={promoBanner2}></img>
+            </div>
+            <div>
+                <img src={promoBanner2}></img>
+            </div> */}
         </div>
     );
 };

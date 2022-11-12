@@ -6,14 +6,11 @@ const Navbar = () => {
     const menuItems =
         <>
             <li><Link to="/">Home</Link></li>
-            <li tabindex="0">
-                <a class="justify-between">
-                    Fashion
-                    <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
-                </a>
-                <ul class="p-2">
-                    <li><Link to="/menFashion">Men Fashion</Link></li>
-                    <li><a>Submenu 2</a></li>
+            <li className="dropdown dropdown-hover">
+                <Link to="/" tabIndex="0" className="m-1">Fashion</Link>
+                <ul tabIndex="0" className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><Link to="/menfashion">Mens Fashion</Link></li>
+                    <li><a>Item 2</a></li>
                 </ul>
             </li>
             <li><Link to="/electronic">Electronic</Link></li>
@@ -25,10 +22,10 @@ const Navbar = () => {
             <div className="navbar bg-base-100">
                 <div className="navbar-start">
                     <div className="dropdown">
-                        <label tabIndex="0" className="btn btn-ghost lg:hidden">
+                        <label tabIndex="1" className="btn btn-ghost lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                         </label>
-                        <ul tabIndex="0" className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                        <ul tabIndex="1" className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                             {menuItems}
                         </ul>
                     </div>
@@ -58,10 +55,10 @@ const Navbar = () => {
                     </div>
                     {/* search btn mobile */}
                     <div className="dropdown dropdown-end lg:hidden md:hidden">
-                        <label tabIndex="0" className="btn btn-ghost btn-circle">
+                        <label tabIndex="2" className="btn btn-ghost btn-circle">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 search-btn" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
                         </label>
-                        <div tabIndex="0" className="mt-3 dropdown-content shadow-xl">
+                        <div tabIndex="2" className="mt-3 dropdown-content shadow-xl">
                             <div className="input-group">
                                 <input type="text" placeholder="Search Products…" />
                                 <button className="btn btn-square btn-primary text-white">
@@ -73,13 +70,13 @@ const Navbar = () => {
 
 
                     <div className="dropdown dropdown-end mx-3">
-                        <label tabIndex="1" className="btn btn-ghost btn-circle">
+                        <label tabIndex="3" className="btn btn-ghost btn-circle">
                             <div className="indicator">
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
                                 <span className="badge badge-sm indicator-item">8</span>
                             </div>
                         </label>
-                        <div tabIndex="1" className="mt-3 card card-compact dropdown-content w-52 bg-base-100 shadow">
+                        <div tabIndex="3" className="mt-3 card card-compact dropdown-content w-52 bg-base-100 shadow">
                             <div className="card-body">
                                 <span className="font-bold text-lg">8 Items</span>
                                 <span className="text-info">Subtotal: $999</span>

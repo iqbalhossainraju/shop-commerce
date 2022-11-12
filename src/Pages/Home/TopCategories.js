@@ -10,11 +10,12 @@ import topCat6 from '../../assets/Top-Categories/jeans.webp';
 import topCat8 from '../../assets/Top-Categories/jumpsuits-playsuits.webp';
 import topCat9 from '../../assets/Top-Categories/lingeries.webp';
 import topCat7 from '../../assets/Top-Categories/skirts-tops.webp';
+import '../Css/TopCategories.css';
 
 const TopCategories = () => {
     return (
         <>
-            <h2 className="underline text-3xl my-5">Top Categories</h2>
+            <h2 className="text-2xl my-5">Top Categories</h2>
             <div className="grid grid-cols-2 lg:grid-cols-5 gap-5">
                 <div className="card lg:max-w-lg bg-base-100 shadow-xl">
                     <div className="card-body">

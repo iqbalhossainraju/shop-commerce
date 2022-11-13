@@ -5,13 +5,31 @@ const MenFashion = () => {
     return (
         <>
             <img src={mensFashionBanner} alt="" />
-
-            {/* <div className="grid grid-col">
-                <div></div>
-            </div> */}
+            <div className="flex items-center justify-between py-4">
+                <h2 className="text-2xl">Men's Fashion</h2>
+                <div className="flex items-center">
+                    <p>Sort by: </p>
+                    <select name="" className=" outline-none border-none">
+                        <option value="">Best Match</option>
+                        <option value="">Price low to high</option>
+                        <option value="">Price high to low</option>
+                    </select>
+                </div>
+            </div>
 
             <div className="flex flex-row my-5 gap-10">
                 <div className="menu hidden lg:block lg:w-96">
+                    <div>
+                        {/* Price Range */}
+                        <h2>Price Range:</h2>
+                        <ul class="steps steps-vertical">
+                            <li class="step step-primary">0-99</li>
+                            <li class="step step-primary">100-199</li>
+                            <li class="step">200-299</li>
+                            <li class="step">300-399</li>
+                            <li class="step">500+</li>
+                        </ul>
+                    </div>
                     <div>
                         {/* Brands */}
                         <h2>Brand:</h2>

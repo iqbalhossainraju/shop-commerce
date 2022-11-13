@@ -10,7 +10,7 @@ const Navbar = () => {
                 <Link to="/" tabIndex="0" className="m-1">Fashion</Link>
                 <ul tabIndex="0" className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
                     <li><Link to="/menfashion">Mens Fashion</Link></li>
-                    <li><a>Item 2</a></li>
+                    <li><Link to="/womenfashion">Women Fashion</Link></li>
                 </ul>
             </li>
             <li><Link to="/electronic">Electronic</Link></li>

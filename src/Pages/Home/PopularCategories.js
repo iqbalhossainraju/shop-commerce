@@ -12,60 +12,62 @@ import '../Css/PopularCategories.css';
 
 const PopularCategories = () => {
     return (
-        <div>
-            <div className="my-10 p-5">
+        <>
+            <div className="my-10">
                 <div className="flex justify-between items-center">
                     <h2 className="text-2xl my-5 mr-2 inline-block capitalize">popular Categories </h2>
                     <Link className="hover:text-primary flex items-center" to="/">See all <AiOutlineArrowRight className="ml-2 inline-block" /></Link>
                 </div>
 
-                <div className="grid grid-cols-2 lg:grid-cols-7 gap-5">
-                    <div>
-                        <Link to="/" className="text-center inline-block hover:underline">
-                            <img class="popularImg" src={popularCategory} alt="" />
-                            <p className="mt-5">
-                                Sneakers</p>
-                        </Link>
-                    </div>
-                    <div>
-                        <Link to="/" className="text-center inline-block hover:underline">
-                            <img class="popularImg" src={popularCategory2} alt="" />
-                            <p className="mt-5">Korean beauty</p>
-                        </Link>
-                    </div>
-                    <div>
-                        <Link to="/" className="text-center inline-block hover:underline">
-                            <img class="popularImg" src={popularCategory3} alt="" />
-                            <p className="mt-5">Wristwatches</p>
-                        </Link>
-                    </div>
-                    <div>
-                        <Link to="/" className="text-center inline-block hover:underline">
-                            <img class="popularImg" src={popularCategory4} alt="" />
-                            <p className="mt-5">Fishies</p>
-                        </Link>
-                    </div>
-                    <div>
-                        <Link to="/" className="text-center inline-block hover:underline">
-                            <img class="popularImg" src={popularCategory5} alt="" />
-                            <p className="mt-5">Collectibles</p>
-                        </Link>
-                    </div>
-                    <div>
-                        <Link to="/" className="text-center inline-block hover:underline">
-                            <img class="popularImg" src={popularCategory6} alt="" />
-                            <p className="mt-5">Smartphones</p>
-                        </Link>
-                    </div>
-                    <div>
-                        <Link to="/" className="text-center inline-block hover:underline">
-                            <img class="popularImg" src={popularCategory7} alt="" />
-                            <p className="mt-5">Sell</p>
-                        </Link>
+                <div className="p-5">
+                    <div className="grid grid-cols-2 lg:grid-cols-7 gap-5">
+                        <div>
+                            <Link to="/" className="text-center inline-block hover:underline">
+                                <img className="popularImg" src={popularCategory} alt="" />
+                                <p className="mt-5">
+                                    Sneakers</p>
+                            </Link>
+                        </div>
+                        <div>
+                            <Link to="/" className="text-center inline-block hover:underline">
+                                <img className="popularImg" src={popularCategory2} alt="" />
+                                <p className="mt-5">Korean beauty</p>
+                            </Link>
+                        </div>
+                        <div>
+                            <Link to="/" className="text-center inline-block hover:underline">
+                                <img className="popularImg" src={popularCategory3} alt="" />
+                                <p className="mt-5">Wristwatches</p>
+                            </Link>
+                        </div>
+                        <div>
+                            <Link to="/" className="text-center inline-block hover:underline">
+                                <img className="popularImg" src={popularCategory4} alt="" />
+                                <p className="mt-5">Fishies</p>
+                            </Link>
+                        </div>
+                        <div>
+                            <Link to="/" className="text-center inline-block hover:underline">
+                                <img className="popularImg" src={popularCategory5} alt="" />
+                                <p className="mt-5">Collectibles</p>
+                            </Link>
+                        </div>
+                        <div>
+                            <Link to="/" className="text-center inline-block hover:underline">
+                                <img className="popularImg" src={popularCategory6} alt="" />
+                                <p className="mt-5">Smartphones</p>
+                            </Link>
+                        </div>
+                        <div>
+                            <Link to="/" className="text-center inline-block hover:underline">
+                                <img className="popularImg" src={popularCategory7} alt="" />
+                                <p className="mt-5">Sell</p>
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     );
 };
 
